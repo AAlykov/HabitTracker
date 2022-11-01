@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/habitListFragment">
+
+    <fragment
+        android:id="@+id/habitListFragment"
+        android:name="com.tomsk.alykov.habittracker.HabitListFragment"
+        android:label="Habits"
+        tools:layout="@layout/fragment_habit_list" >
+        <action
+            android:id="@+id/action_habitListFragment_to_createHabitFragment"
+            app:destination="@id/createHabitFragment" />
+        <action
+            android:id="@+id/action_habitListFragment_to_updateHabitFragment"
+            app:destination="@id/updateHabitFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createHabitFragment"
+        android:name="com.tomsk.alykov.habittracker.CreateHabitFragment"
+        android:label="Create habit"
+        tools:layout="@layout/fragment_create_habit" >
+        <action
+            android:id="@+id/action_createHabitFragment_to_habitListFragment"
+            app:destination="@id/habitListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateHabitFragment"
+        android:name="com.tomsk.alykov.habittracker.UpdateHabitFragment"
+        android:label="Update habit"
+        tools:layout="@layout/fragment_update_habit" >
+        <action
+            android:id="@+id/action_updateHabitFragment_to_habitListFragment"
+            app:destination="@id/habitListFragment" />
+    </fragment>
+</navigation>
