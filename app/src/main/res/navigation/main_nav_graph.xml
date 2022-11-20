@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/habitListFragment"
-        android:name="com.tomsk.alykov.habittracker.HabitListFragment"
+        android:name="com.tomsk.alykov.habittracker.ui.fragments.HabitListFragment"
         android:label="Habits"
         tools:layout="@layout/fragment_habit_list" >
         <action
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/createHabitFragment"
-        android:name="com.tomsk.alykov.habittracker.CreateHabitFragment"
+        android:name="com.tomsk.alykov.habittracker.ui.fragments.CreateHabitFragment"
         android:label="Create habit"
         tools:layout="@layout/fragment_create_habit" >
         <action
@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/updateHabitFragment"
-        android:name="com.tomsk.alykov.habittracker.UpdateHabitFragment"
+        android:name="com.tomsk.alykov.habittracker.ui.fragments.UpdateHabitFragment"
         android:label="Update habit"
         tools:layout="@layout/fragment_update_habit" >
         <action
