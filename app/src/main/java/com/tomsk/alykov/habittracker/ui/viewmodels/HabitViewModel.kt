@@ -12,7 +12,7 @@ import kotlinx.coroutines.launch
 
 class HabitViewModel(application: Application): AndroidViewModel(application) {
     private val repository: HabitRepository
-    private val getAllHabits: LiveData<List<Habit>>
+    val getAllHabits: LiveData<List<Habit>>
 
     init {
         val habitDao = HabitDatabase.getDatabase(application).habitDao()

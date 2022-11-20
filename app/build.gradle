@@ -80,8 +80,7 @@ dependencies {
     implementation "androidx.room:room-ktx:2.4.3"
     androidTestImplementation "androidx.room:room-testing:2.4.3"
 
-    //Date picker
-    implementation 'com.wdullaer:materialdatetimepicker:4.2.3'
+
 
     //ViewPager2
     implementation 'androidx.viewpager2:viewpager2:1.0.0'

@@ -43,8 +43,9 @@ object Calculation {
 
     private fun timeStampToString(timeStamp: Long): String {
         val stamp = Timestamp(timeStamp)
-        val sdf = SimpleDateFormat("dd/MM/yyyy")
+        val sdf = SimpleDateFormat("dd/MM/yyyy HH:mm")
         val date = sdf.format(Date(stamp.time))
+
         return date.toString()
     }
 
@@ -56,7 +57,11 @@ object Calculation {
         }
         if (_month < 9) {
             month = "0${_month+1}"
-        }
+        } else
+            if (_month >= 9 && _month <= 11) {
+                month = (_month + 1).toString()
+            }
+
         return "$day/$month/$_year"
     }
 

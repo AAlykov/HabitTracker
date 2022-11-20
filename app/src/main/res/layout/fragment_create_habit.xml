@@ -96,7 +96,7 @@
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
-                    android:src="@drawable/ic_coffee" />
+                    android:src="@drawable/coffee_selected" />
 
                 <ImageView
                     android:id="@+id/iv_fastFoodSelected"
@@ -112,7 +112,7 @@
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
-                    android:src="@drawable/ic_smoke" />
+                    android:src="@drawable/smoke_selected" />
 
             </LinearLayout>
 
