@@ -10,7 +10,6 @@ import com.tomsk.alykov.habittracker.logic.dao.HabitDao
 @Database(entities = [Habit::class], version = 1)
 abstract class HabitDatabase: RoomDatabase() {
     abstract fun habitDao(): HabitDao
-
     companion object {
         @Volatile //это означает как только мы получим к нему (экземпляру) доступ он станет виден для всех потоков
         private var INSTANCE: HabitDatabase? =null //Создаем экзмпляр БД
@@ -31,5 +30,4 @@ abstract class HabitDatabase: RoomDatabase() {
             }
         }
     }
-
 }

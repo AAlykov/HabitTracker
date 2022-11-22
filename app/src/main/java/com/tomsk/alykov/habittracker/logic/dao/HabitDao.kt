@@ -25,4 +25,7 @@ interface HabitDao {
 
     @Query("delete from habit_table")
     suspend fun deleteAllHabits()
+
+    @Query("select * from habit_table")
+    fun getAllHabits2(): MutableList<Habit>
 }

@@ -21,7 +21,7 @@ class HabitListAdapter: RecyclerView.Adapter<HabitListAdapter.MyViewHolder>() {
                 val position = adapterPosition
                 Log.d("HabitsListAdapter", "Item clicked at: $position")
 
-                val action = HabitListFragmentDirections.actionHabitListFragmentToUpdateHabitFragment((habitList[position]))
+                val action = HabitListFragmentDirections.actionHabitListFragmentToUpdateHabitFragment((habitList[position]),habitList[position].habit_startTime )
                 itemView.findNavController().navigate(action)
             }
         }

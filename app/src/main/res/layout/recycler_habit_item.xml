@@ -11,19 +11,10 @@
         android:id="@+id/cv_cardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="#FFFFFF"
+
         android:clickable="true"
         android:focusable="true"
         app:cardCornerRadius="10dp">
-
-        <ImageView
-
-            android:id="@+id/iv_habit_icon"
-            android:layout_width="140dp"
-            android:layout_height="140dp"
-            android:layout_margin="10dp"
-            android:alpha=".1"
-            android:src="@drawable/ic_coffee_color" />
 
 
         <LinearLayout
@@ -89,7 +80,13 @@
 
         </LinearLayout>
 
-
+        <ImageView
+            android:id="@+id/iv_habit_icon"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_margin="10dp"
+            android:alpha=".3"
+            android:src="@drawable/ic_coffee_color" />
     </androidx.cardview.widget.CardView>
 
 </LinearLayout>

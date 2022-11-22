@@ -97,7 +97,6 @@ class CreateHabitFragment : Fragment(), TimePickerDialog.OnTimeSetListener, Date
         }
     }
 
-
     private fun pickDateAndTime() {
         btn_pickDate.setOnClickListener {
             getDateCalendar()
